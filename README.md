@@ -1,4 +1,4 @@
-# ⚡️ Flux
+# ⚡️ Flux — Digital Logic Simulator
 
 A fast, playful digital-circuit sandbox.
 
