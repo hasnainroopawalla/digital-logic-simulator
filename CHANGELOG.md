@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.4.1...v1.5.0) (2026-10-09)
+
+
+### Features
+
+* README Update ([a97a2f9](https://github.com/hasnainroopawalla/digital-logic-simulator/commit/a97a2f97a99bc790314274f84b5b34b927ed382f))
+
 ## [1.4.1](https://github.com/hasnainroopawalla/flux/compare/v1.4.0...v1.4.1) (2026-02-08)
 
 
