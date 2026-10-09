@@ -4,8 +4,6 @@ A fast, playful digital-circuit sandbox.
 
 Visually build logic circuits, compose custom chips, and experiment freely in real time. Save your designs as blueprints, share them with friends, or grow your own library of reusable components.
 
-Built for tinkering, learning, and rapid iteration.
-
 <p align="center">
     <img src="assets/latch.png" alt="SR LATCH"/>
 </p>
