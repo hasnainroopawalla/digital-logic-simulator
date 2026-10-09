@@ -43,7 +43,7 @@ You can load these blueprints directly into the simulator, modify them, or use t
 
 ## 🧩 Contributing
 
-- Found a bug or have a feature idea? Open an issue on GitHub: https://github.com/hasnainroopawalla/flux/issues
+- Found a bug or have a feature idea? Open an issue on GitHub: https://github.com/hasnainroopawalla/digital-logic-simulator/issues
 - To contribute: fork, make changes on a branch, and open a pull request against `master`.
 
 ## 📄 License
