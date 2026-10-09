@@ -1,3 +1,3 @@
 export const config = {
-	githubRepoUrl: "https://github.com/hasnainroopawalla/flux",
+  githubRepoUrl: "https://hasnainroopawalla.github.io/digital-logic-simulator",
 };
