@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.5.0...v1.6.0) (2026-10-09)
+
+
+### Features
+
+* Rename project ([1a21145](https://github.com/hasnainroopawalla/digital-logic-simulator/commit/1a21145ba283513e81634f64ccfa2ac678246902))
+
 ## [1.5.0](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.4.1...v1.5.0) (2026-10-09)
 
 

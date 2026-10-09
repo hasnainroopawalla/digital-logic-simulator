@@ -1,6 +1,6 @@
 {
   "name": "digital-logic-sim",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "homepage": "https://hasnainroopawalla.github.io/digital-logic-simulator",
   "description": "Interactive digital logic circuit simulator built with React and WebGPU. Build logic gates, connect circuits, create custom chips, and simulate digital logic in your browser.",
   "main": "index.js",
