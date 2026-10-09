@@ -1,7 +1,7 @@
 {
   "name": "digital-logic-sim",
-  "version": "1.4.1",
-  "homepage": "http://hasnainroopawalla.github.io/flux",
+  "version": "1.5.1",
+  "homepage": "https://hasnainroopawalla.github.io/digital-logic-simulator",
   "description": "Digital Logic Gate Simulator using React and WebGPU",
   "main": "index.js",
   "scripts": {
