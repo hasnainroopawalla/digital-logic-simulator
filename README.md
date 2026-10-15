@@ -55,13 +55,13 @@ packages/
 
 ### Commands
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the web app's development server |
-| `npm run build` | Build the web app into the root `dist/` directory |
-| `npm run preview` | Build and preview the production app locally |
-| `npm test` | Run tests across all workspaces once |
-| `npm run lint` | Run Biome lint and formatting checks |
+| Command             | Description                                           |
+| ------------------- | ----------------------------------------------------- |
+| `npm run dev`       | Start the web app's development server                |
+| `npm run build`     | Build the web app into the root `dist/` directory     |
+| `npm run preview`   | Build and preview the production app locally          |
+| `npm test`          | Run tests across all workspaces once                  |
+| `npm run lint`      | Run Biome lint and formatting checks                  |
 | `npm run typecheck` | Check every workspace and the root test configuration |
 
 Use `npm ci` for reproducible installs from the committed lockfile, as CI does.
