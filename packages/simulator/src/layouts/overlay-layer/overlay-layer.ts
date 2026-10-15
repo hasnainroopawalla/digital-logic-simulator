@@ -8,18 +8,14 @@ import type {
 } from "../../managers/input-manager";
 import type { MousePosition } from "../../types";
 import type { Entity } from "../../entities/entity";
-import type { Camera } from "../../camera";
 import { LayerType, type LayerArgs } from "../layout.interface";
 
 export class OverlayLayer extends BaseLayer<LayerType.Overlay> {
-	private camera: Camera;
-
 	constructor(args: LayerArgs<LayerType.Overlay>) {
 		super({
 			...args,
 			layerType: LayerType.Overlay,
 		});
-		this.camera = args.camera;
 	}
 
 	public getRenderables(_renderables: Renderable[]): Renderable[] {

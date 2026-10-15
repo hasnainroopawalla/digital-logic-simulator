@@ -1,9 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "moduleResolution": "bundler",
-    "types": ["@webgpu/types"]
+    "types": ["vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["index.ts", "src", "tests"]
 }

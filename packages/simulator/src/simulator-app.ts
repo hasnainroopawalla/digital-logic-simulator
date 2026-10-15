@@ -36,9 +36,6 @@ export class SimulatorApp {
 
 	private animationId: number | null = null;
 
-	// biome-ignore lint/correctness/noUnusedPrivateClassMembers: <temporary component>
-	private scenarioLoader: ScenarioLoader;
-
 	constructor(args: SimulatorAppArgs) {
 		this.clock = new Clock({ showFrameTime: false });
 
@@ -84,11 +81,9 @@ export class SimulatorApp {
 			this.registerCanvasResizeObserver(args.canvas);
 		});
 
-		this.scenarioLoader = new ScenarioLoader(this.sim);
+		new ScenarioLoader(this.sim);
 
 		this.init();
-
-		// setTimeout(() => this.scenarioLoader.load("OrUsingNand"), 1000);
 	}
 
 	public async start(): Promise<void> {

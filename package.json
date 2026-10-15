@@ -1,25 +1,35 @@
 {
   "name": "digital-logic-sim",
   "version": "1.5.0",
+  "private": true,
+  "type": "module",
   "homepage": "https://hasnainroopawalla.github.io/digital-logic-simulator",
   "description": "Interactive digital logic circuit simulator built with React and WebGPU. Build logic gates, connect circuits, create custom chips, and simulate digital logic in your browser.",
-  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": "^22.13.0 || >=24.0.0",
+    "npm": ">=11.0.0"
+  },
   "scripts": {
-    "start": "pnpm --filter @digital-logic-sim/web start",
-    "preview": "pnpm --filter @digital-logic-sim/web preview",
-    "build": "pnpm --filter @digital-logic-sim/web build --emptyOutDir",
-    "test:unit": "pnpm -r run test",
-    "test": "pnpm -r test",
-    "lint": "biome check && tsc -p tsconfig.json --noEmit",
+    "dev": "npm run dev --workspace=@digital-logic-sim/web --",
+    "start": "npm run dev --",
+    "preview": "npm run preview --workspace=@digital-logic-sim/web --",
+    "build": "npm run build --workspace=@digital-logic-sim/web -- --emptyOutDir",
+    "test:unit": "npm test",
+    "test": "npm run test --workspaces",
+    "typecheck": "npm run typecheck --workspaces && tsc -p tsconfig.json",
+    "lint": "biome check",
     "lint:fix": "biome check --fix . && biome format --write ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.20.0",
+  "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
-    "@types/jest": "^30.0.0",
+    "@types/node": "^24.6.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.8"
   }

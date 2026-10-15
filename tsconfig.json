@@ -1,24 +1,8 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2023",
-    "module": "ESNext",
-    "lib": ["ES2023", "DOM"],
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
+    "lib": ["ES2023"],
+    "types": ["node"]
   },
-  "exclude": [
-    "node_modules",
-    "**/vite.config.ts",
-    "**/vitest.config.ts"
-  ]
+  "include": ["vitest.config.ts"]
 }

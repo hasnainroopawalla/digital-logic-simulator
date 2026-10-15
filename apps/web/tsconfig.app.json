@@ -1,7 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
@@ -10,6 +10,5 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["vite/client", "vitest/globals"]
   },
-  "include": ["src"],
-  "exclude": ["dist", "vite.config.ts", "vitest.config.ts"]
+  "include": ["src", "tests"]
 }
