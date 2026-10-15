@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.6.1...v1.6.2) (2026-10-15)
+
+
+### Bug Fixes
+
+* comment update ([bcda205](https://github.com/hasnainroopawalla/digital-logic-simulator/commit/bcda20522235211045f4557bb8ee77485bfa4dec))
+
 ## [1.6.1](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.6.0...v1.6.1) (2026-10-15)
 
 
