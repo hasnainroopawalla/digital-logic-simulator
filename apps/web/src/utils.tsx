@@ -69,7 +69,7 @@ export const useOnClickOutside = (
 };
 
 /**
- * Returns the current mouse position in the document.
+ * Returns the current mouse position in the current document.
  */
 export const useGetMousePosition = (): (() => Position) => {
 	const positionRef = React.useRef<Position>({ x: 0, y: 0 });
