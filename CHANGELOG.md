@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.6.0...v1.6.1) (2026-10-15)
+
+
+### Bug Fixes
+
+* Npm workspaces ([#78](https://github.com/hasnainroopawalla/digital-logic-simulator/issues/78)) ([b6850fd](https://github.com/hasnainroopawalla/digital-logic-simulator/commit/b6850fdd0f6c525b155471db4323bcd3ebb88cfe))
+
 ## [1.6.0](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.5.0...v1.6.0) (2026-10-09)
 
 
