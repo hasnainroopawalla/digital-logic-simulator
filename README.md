@@ -22,17 +22,63 @@ http://hasnainroopawalla.github.io/flux
 
 ### Instructions
 
-1. Install dependencies (requires `pnpm`):
+Requires Node.js 22.13+ (22.x) or 24+, and npm 11+.
+
+Run all commands from the repository root.
+
+1. Install dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 2. Run the app:
 
 ```bash
-pnpm start
+npm run dev
 ```
+
+`npm start` is also available as an alias.
+
+### Repository structure
+
+This repository uses npm workspaces with one shared `package-lock.json`:
+
+```text
+apps/
+  web/            React + Vite application
+packages/
+  render-engine/  WebGPU rendering
+  shared-types/   Shared TypeScript types
+  simulator/      Circuit simulation
+```
+
+### Commands
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the web app's development server |
+| `npm run build` | Build the web app into the root `dist/` directory |
+| `npm run preview` | Build and preview the production app locally |
+| `npm test` | Run tests across all workspaces once |
+| `npm run lint` | Run Biome lint and formatting checks |
+| `npm run typecheck` | Check every workspace and the root test configuration |
+
+Use `npm ci` for reproducible installs from the committed lockfile, as CI does.
+To target a workspace, use commands such as
+`npm run test --workspace=@digital-logic-sim/simulator`.
+
+### Workspace tooling
+
+- TypeScript and Vitest are shared development tools installed at the root.
+- Workspaces extend `tsconfig.base.json` and provide their own `typecheck` scripts.
+  Checks cover source files, public entry points, and tests; the web app also
+  checks its Vite and Vitest configuration.
+- Tests use Vitest globals. Web tests run in jsdom with React Testing Library,
+  Vitest-compatible DOM matchers, and cleanup configured in `apps/web/tests/setup.ts`.
+- Library workspaces expose their TypeScript entry points through `exports` and
+  `types`. They are private, source-only packages consumed by Vite, not standalone
+  JavaScript distributions.
 
 ## 📦 Blueprints
 
@@ -48,4 +94,5 @@ You can load these blueprints directly into the simulator, modify them, or use t
 
 ## 📄 License
 
-- This project is licensed under the MIT License — see the LICENSE file for details.
+- This project and all workspaces are licensed under the MIT License — see
+  [LICENSE](./LICENSE) for details.

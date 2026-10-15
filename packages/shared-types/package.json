@@ -1,13 +1,21 @@
 {
   "name": "@digital-logic-sim/shared-types",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
   "scripts": {
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.20.0"
+  "license": "MIT"
 }
