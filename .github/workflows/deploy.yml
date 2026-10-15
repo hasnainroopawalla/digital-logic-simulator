@@ -1,6 +1,12 @@
 name: Deploy Release
 
 on:
+  workflow_call:
+    inputs:
+      tag:
+        description: 'Git tag to deploy'
+        required: true
+        type: string
   workflow_dispatch:
     inputs:
       tag:
@@ -12,6 +18,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
