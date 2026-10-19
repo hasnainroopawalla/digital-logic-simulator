@@ -15,6 +15,7 @@ export const ChipName: React.FC<ChipNameProps> = ({ id, labelRef, name }) => {
 			id={`label-${id}`}
 			ref={labelRef}
 			className="absolute -translate-x-1/2 -translate-y-1/2 text-white select-none flex flex-col items-center justify-center px-2"
+			style={{ display: "none" }}
 		>
 			{lines.slice(0, 2).map((line) => (
 				<span
