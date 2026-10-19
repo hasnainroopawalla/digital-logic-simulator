@@ -9,7 +9,9 @@ jobs:
   validate-title:
     if: |
       github.actor != 'release-please[bot]' &&
-      github.actor != 'github-actions[bot]'
+      github.actor != 'github-actions[bot]' &&
+      (github.event_name != 'pull_request' ||
+       !startsWith(github.event.pull_request.title, 'chore(master): release'))
       
     runs-on: ubuntu-latest
 
