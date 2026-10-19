@@ -18,6 +18,6 @@ jobs:
         uses: amannn/action-semantic-pull-request@v6
         with:
           requireScope: false
-          subjectPattern: ^[A-Z].+
+          subjectPattern: ^[A-Za-z].+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
