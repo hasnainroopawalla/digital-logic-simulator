@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.6.2...v1.6.3) (2026-10-19)
+
+
+### Bug Fixes
+
+* ensure chip name div is hidden by default ([#83](https://github.com/hasnainroopawalla/digital-logic-simulator/issues/83)) ([eedb925](https://github.com/hasnainroopawalla/digital-logic-simulator/commit/eedb925b38cb49f707f7d5db047c2a44595805fc))
+
 ## [1.6.2](https://github.com/hasnainroopawalla/digital-logic-simulator/compare/v1.6.1...v1.6.2) (2026-10-15)
 
 
